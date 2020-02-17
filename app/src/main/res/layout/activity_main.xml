@@ -6,4 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+    </FrameLayout>
+
+        <Button
+            android:id="@+id/Button_frd"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_LeftOf="@+id/Button_chat"
+            android:text="Freinds"
+            >
+         </Button>
+
+        <Button
+            android:id="@+id/Button_chat"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/Button_frd"
+            app:layout_constraintRight_toLeftOf="@+id/Button_news"
+            android:text="Chatting"
+            >
+
+        </Button>
+
+        <Button
+            android:id="@+id/Button_news"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/Button_chat"
+            app:layout_constraintRight_toLeftOf="@+id/Button_set"
+            android:text="news"
+
+            >
+
+        </Button>
+
+        <Button
+            android:id="@+id/Button_set"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Button_news"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Setting"
+            >
+
+        </Button>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
